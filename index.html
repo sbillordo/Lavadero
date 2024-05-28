@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="clienteForm">
+        <input type="text" id="nombre" placeholder="Nombre cliente" required>
+        <input type="text" id="patente" placeholder="Patente" required>
+        <input type="tel" id="telefono" placeholder="Telefono" pattern="[0-9]{10}" required>
+        <input type="text" id="modelo" placeholder="Modelo de vehiculo" required>
+        <div class="radio-group">
+            <label><input type="radio" name="opcion" value="Option 1" required> Option 1</label>
+            <label><input type="radio" name="opcion" value="Option 2"> Option 2</label>
+            <label><input type="radio" name="opcion" value="Option 3"> Option 3</label>
+        </div>
+        <button type="button" onclick="cargarDatos()">Cargar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
