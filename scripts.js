@@ -17,11 +17,11 @@ async function cargarDatos() {
     };
 
     try {
-        const response = await fetch('https://YOUR_SUPABASE_URL/rest/v1/YOUR_TABLE_NAME', {
+        const response = await fetch('https://kanczicgtylccoudssnr.supabase.co', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'apikey': 'a3525751-cef1-404c-a3c6-1462d72d6d40',
+                'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImthbmN6aWNndHlsY2NvdWRzc25yIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTY4NTY2MzQsImV4cCI6MjAzMjQzMjYzNH0.9o1Nmp3_t6HQDyJ6gACqZiqmBZ24GgaGdVYYem1Jx4I',
                 'Authorization': 'sba_1f4c3c41bb25cb6f595c4dff598046b477bd79d9'
             },
             body: JSON.stringify(data)
